@@ -8,32 +8,39 @@
   <style>
     :root {
       --fg: #1f2937;
-      --accent: #0f766e;
+      --accent: #7c3aed;
       --bg: #ffffff;
       --card: #f9fafb;
       --border: #e5e7eb;
-      --max: 720px;
+      --max: 800px;
     }
     * { box-sizing: border-box; }
     body { margin: 0; padding: 20px; background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif; line-height: 1.6; }
-    .wrap { max-width: var(--max); margin: 0 auto; }
-    h1 { margin-bottom: 0.2em; }
+    .wrap { max-width: var(--max); margin: 0 auto; text-align: center; }
+    h1 { margin-top: 0.5em; }
     p { margin-top: 1em; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-top: 1em; }
-    ul { padding-left: 1.2em; }
-    .footer { margin-top: 2em; font-size: 0.9em; color: var(--fg); border-top: 1px solid var(--border); padding-top: 1em; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-top: 1.5em; text-align: left; }
+    ul { padding-left: 1.2em; text-align: left; }
+    .footer { margin-top: 2em; font-size: 0.9em; color: var(--fg); border-top: 1px solid var(--border); padding-top: 1em; text-align: left; }
+    .logo { max-width: 140px; margin: 20px auto; }
+    .bot-link { display: inline-block; margin: 1em 0; padding: 0.6em 1.2em; border-radius: 6px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
+    .bot-link:hover { opacity: 0.9; }
   </style>
 </head>
 <body>
   <div class="wrap">
+    <img src="img/logo.png" alt="ФотоКейс AI" class="logo">
     <h1>ФотоКейс AI</h1>
     <p><strong>ФотоКейс AI</strong> — это развлекательный Telegram-бот, который анализирует загруженные фотографии и выдаёт результаты по таким направлениям, как:</p>
     <ul>
       <li>анализ личности,</li>
       <li>анализ образа и стиля.</li>
     </ul>
+
+    <a href="https://t.me/photocasebot" class="bot-link">Перейти к боту @photocasebot</a>
+
     <div class="card">
       <p>Дополнительная информация:</p>
       <ul>
